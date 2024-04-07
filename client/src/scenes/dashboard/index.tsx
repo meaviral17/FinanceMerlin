@@ -43,12 +43,12 @@ const gridTemplateSmallScreens = `
   "h"
   "h"
   "i"
-  "i"
+Dashboard  "i"
   "j"
   "j"
 `;
 
-const Dashboard = () => {
+const  Dashboard = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
   return (
     <Box
