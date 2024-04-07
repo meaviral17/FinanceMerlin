@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* LEFT SIDE */}
       <FlexBetween gap="0.75rem">
         <PriceChangeIcon sx={{ fontSize: "28px" }} />
-        <Typography variant="h4" fontSize="16px">
+        <Typography variant="h4" fontSize="18px">
           Finance Merlin
         </Typography>
       </FlexBetween>
@@ -27,6 +27,7 @@ const Navbar = () => {
             style={{
               color: selected === "dashboard" ? "inherit" : palette.grey[700],
               textDecoration: "inherit",
+              fontSize: '18px',
             }}
           >
             dashboard
@@ -39,6 +40,7 @@ const Navbar = () => {
             style={{
               color: selected === "predictions" ? "inherit" : palette.grey[700],
               textDecoration: "inherit",
+              fontSize: '18px',
             }}
           >
             predictions
