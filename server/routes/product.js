@@ -1,15 +1,12 @@
 import express from "express";
-import Transaction from "../models/Transaction.js";
+import Product from "../models/Product.js";
 
 const router = express.Router();
 
-router.get("/transactions", async (req, res) => {
+router.get("/products", async (req, res) => {
   try {
-    const transactions = await Transaction.find()
-      .limit(50)
-      .sort({ createdOn: -1 });
-
-    res.status(200).json(transactions);
+    const products = await Product.find();
+    res.status(200).json(products);
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
