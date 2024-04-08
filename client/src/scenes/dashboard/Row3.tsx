@@ -8,7 +8,7 @@ import {
 } from "@/state/api";
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid, GridCellParams } from "@mui/x-data-grid";
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import { Cell, Pie, PieChart } from "recharts";
 
 const Row3 = () => {
@@ -160,7 +160,7 @@ const Row3 = () => {
         <FlexBetween mt="0.5rem" gap="0.5rem" p="0 1rem" textAlign="center">
           {pieChartData?.map((data, i) => (
             <Box key={`${data[0].name}-${i}`}>
-              <PieChart width={75} height={75}>
+              <PieChart width={110} height={100}>
                 <Pie
                   stroke="none"
                   data={data}
